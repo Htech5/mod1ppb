@@ -4,6 +4,7 @@ import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import customerRoutes from "./routes/customerRoutes.js";
 import branchRoutes from "./routes/branchRoutes.js";
+import restockRoutes from "./routes/restockRoutes.js";
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ app.use("/api/categories", categoryRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/customers", customerRoutes);
 app.use("/api/branches", branchRoutes);
+app.use("/api/restocks", restockRoutes);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
